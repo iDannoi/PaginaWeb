@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet');
+ @import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Oswald:wght@200..700&display=swap');
+
+
+:root{
+    --color-primario: #FFE1E0;
+    --color-primario-alterno: #ffffff;
+    --color-secundario:#7F55B1;
+    --color-tercer: #D9D9D9;
+    --color-quinto:#F49BAB;
+    --color-footer:#9B7EBD;
+    --tipo-fuente: "Funnel Sans", sans-serif;
+    --tipo-fuente-contactactanos:"Odibee Sans", sans-serif;
+    --fuente-tamano-1: 1.5rem;
+    --fuente-tamano-2: 2.5rem;
+    --fuente-tamano-3:5rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px; /* Altura más baja */
+    background-color: var(--color-primario-alterno);
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Menos espacio interno */
+    overflow-x: hidden;
+    justify-content: space-between;
+    gap: 20px; /* Menor separación entre elementos */
+    z-index: 1100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+body{
+    background-color: var(--color-primario-alterno);
+    padding-top: 70px; 
+}
+
+.header-logo .logo-tamaño {
+    width: 140px;
+    height: 120px;
+    padding: 0;
+}
+
+
+.header-menu {
+    display: flex;
+    gap: 50px; /* Esta es la separación entre los botones del menú */
+    margin-left: 50px; 
+}
+
+
+.header-menu-link {
+    font-family: var(--tipo-fuente);
+    font-size: var(--fuente-tamano-1);
+    color: #000;
+    background-color: var(--color-tercer);
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+}
+
+/* Body de INDEX*/
+.contenedor-imagen-principal{
+    display: flex;
+    justify-content: end;
+
+}
+.imagen-maquina-de-bordado{
+width: 1400px;
+height: 500px;;
+padding-left: 60px;
+}
+
+.titulo-principal{
+    font-family: var(--tipo-fuente);
+    font-size: var(--fuente-tamano-3);
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.bloque-texto{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     padding-left: 40px;
+     
+}
+
+.separador-portafolio{
+    background-color: #7F55B1;
+     padding: 25px 50px 75px 100px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.separador-portafolio2{
+    background-color:var(--color-footer);
+     padding: 25px 50px 25px 75px;
+    margin-top: 100px;
+    display: flex;
+   
+    align-items: center;
+}
+.conoce-nuestro-trabajo{
+    font-size: var(--fuente-tamano-3);
+    color: var(--color-primario-alterno);
+    font-family: var(--tipo-fuente-contactactanos);
+}
+
+.bloque-portafolio{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: var(--tipo-fuente);
+    font: size 5px;
+    margin: bottom 150px;
+
+}
+
+.bordados-link{
+
+    display: flex;
+    align-items: center;
+    left: 20px;
+    height: 40px;
+    border-radius: 12px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    background-color: var(--color-tercer);
+    margin-top: 20px;
+
+    
+}
+
+.Bordados-escolares{
+    display: flex;
+    width: 350px;
+    height: 350px; 
+   padding: 25px 10px 10px 10px;
+    transition: width 2s, height 2s, transform 2s;
+
+}
+.Bordados-escolares:hover{
+     width: 400px;
+    height: 400px;
+    transform: rotate(360deg);
+}
+
+
+.Bordados-personalizados{
+    display: flex;
+    width: 320px;
+    height: 320px; 
+   padding: 10px 25px 10px 10px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.Bordados-personalizados:hover{
+    width: 400px;
+    height: 400px;
+    transform: rotate(360deg);
+
+
+}
+.bordado-p-link{
+    
+    display: flex;
+    align-items: center;
+    left: 650px;
+    height: 40px;
+    border-radius: 12px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    background-color: var(--color-tercer);
+    margin-top: 20px;
+}
+
+.portafolio-personalizado{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     margin: 100px 25px 25px 25px;
+   
+}
+.portafolio-escolares{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 30px 30px 30px;
+
+}
+.separador-footer{
+    background-color: var(--color-secundario);
+    padding: 5px 50px 75px 100px;
+}
+
+
+.necesitas-cotizacion{
+    font-family: var(--tipo-fuente-contactactanos);
+    font-size: var(--fuente-tamano-2);
+    text-shadow: 2px 2px;
+
+}
+.ponte-n-cotacto {
+    margin-top: 20px ;
+    font-family: var(--tipo-fuente);
+    font-size: var(--fuente-tamano-2);
+    text-decoration: none !important;
+
+}
+.contenedor-llamenos-ubicacion-whats{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedor-llamenos-ubicacion-whats p {
+margin: 25px 50px 10px 450px;
+font-family:var(--tipo-fuente-contactactanos);
+font-size: var(--fuente-tamano-1);
+}
+.contenedor-llamenos-ubicacion-whats a{
+margin: 25px 50px 5px 450px;
+color: chartreuse;
+}
+
+.contenedor-ayuda-contacto{
+    background-color: #7F55B1;
+     padding: 100px 50px 75px 100px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--tipo-fuente-contactactanos);
+    font-size: var(--fuente-tamano-2);
+}
+.contenedor-contacto{
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 100px;
+    margin-left: 90px;
+    flex-direction: column;
+}
+.cuentanos-que-imaginas{
+    padding-bottom: 0 10px 20px 10px;
+     font-family: var(--tipo-fuente-contactactanos);
+    font-size: var(--fuente-tamano-1);
+    text-align: center;
+}
+
+form {
+padding: 50px 55px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+border-radius: 20px;
+text-align:center;
+width: 400px;
+margin-top: 40px ;
+}
+.input-group{
+display: flex;
+flex-direction: column;
+text-align: left;
+}
+
+h2{
+color: #283625;
+font-size: 35px;
+}
+
+label{
+    color: #283629;
+    font-size: 15px;
+    font-weight: 680;
+    margin-bottom: 15px;
+}
+input,textarea{
+    padding: 17px 25px;
+    border-radius:  25px; 
+    margin-bottom: 20px;
+    background-color: var(--color-primario-alterno);
+    border: 2px solid #F0FAF1;
+    color: #283629;
+    outline: none;
+
+}
+input::placeholder,textarea::placeholder{
+    color:grey;
+}
+input,textarea{
+
+    background-color: var(--color-primario);
+
+}
+
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+}
+.form-txt a {
+color:var(--color-footer);
+font-size: 14px;
+font-weight: 600;
+text-decoration: none;
+
+}
+
+.btn {
+font-size: 16px;
+color: #FFFFFF;
+border: 0;
+border-radius: 25px;
+background-color: var(--color-quinto);
+box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+cursor: pointer;
+}
+.btn:hover {
+background-color:var(--color-secundario);
+}
+
+/* Sobre nosotros*/
+.publicidad-texto{
+    bottom: 100px;
+    position:absolute;
+    content: justify;
+    margin: auto;
+    left: 20px;
+    width: 40rem;
+    top: 100px;
+    font-size: var(--fuente-tamano-1);
+    text-align: center;
+    
+}
+
+.publicidad-texto-3{
+    bottom: 100px;
+    position: absolute;
+    left: 20px;
+    width: 40rem;
+    top: 400px;
+    font-size: var(--fuente-tamano-1);
+    text-align: center;
+}
+
+.publicidad-texto-4{
+    bottom: 100px;
+    position: absolute;
+    margin: auto;
+    left: 20px;
+    width: 40rem;
+    top: 600px;
+    font-size: var(--fuente-tamano-1);
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.publicidad-imagen{
+    position: absolute;
+    right: 50px;
+}
+.publicidad-imagen img{
+    margin-top: 30px;
+    width: 500px;
+    height: 500px;
+
+}
+.separador-portafolio3{
+    background-color:var(--color-footer);
+     padding: 25px 50px 75px 100px;
+    margin-top: 600px;
+    display: flex;
+    justify-content:end;
+    align-items: end;
+
+}
+.separador-footer2{
+    background-color: var(--color-secundario);
+    padding: 5px 50px 75px 100px;
+    margin-bottom: 10px;
+}
+.contenedor-llamenos-ubicacion-whats2{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+}
+
+/*PAGINA DE CONTACTO */
+/* Contenedor principal de imagen y frase */
+.contenedor-frase-imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+/* Imagen de la persona */
+.persona-contacto {
+    position: static;
+    width: 250px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+/* Frase centrada */
+.frase-contacto {
+    position: static;
+    font-size: calc(var(--fuente-tamano-2) * 0.85);
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: var(--tipo-fuente-contactactanos);
+    align-items: center;
+    left: 500px;
+}
+.texto-contacto{
+     font-family: fantasy;
+     color: rgb(63, 58, 58);
+    font-size: var(--fuente-tamano-1);
+    margin-bottom: 20px;
+}
+
+/* Contenedor de rectángulos */
+.contenedor-rectangulos-de-contacto {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    margin: 0;
+    flex-wrap: wrap;
+    text-decoration: none !important;
+}
+
+/* Rectángulos compactos */
+.rectangulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 280px;
+    border: 6px solid var(--color-quinto);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+     margin-bottom: 30px;
+}
+
+.rectangulo:hover {
+    width: 240px;
+    background-color: darkturquoise;
+}
+
+.fa-solid, .fa-brands {
+    font-size: 50px;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom:15px;
+    
+    
+}
+.titulo-escudos-promocionales{
+color: var(--color-secundario);
+font-family: var(--tipo-fuente-contactactanos);
+font-size: var(--fuente-tamano-2);
+text-align: center;
+margin-bottom: 20px;
+}
+.frase-rectangulo {
+    font-size: calc(var(--fuente-tamano-2) * 0.75);
+    text-align: center;
+    font-family: var(--tipo-fuente-contactactanos);
+    margin: bottom 15px;
+    
+}
+.frase-rectangulo2{
+    font-size: var(--fuente-tamano-2);
+    color:var(--color-primario-alterno);
+    font-family: var(--tipo-fuente-contactactanos);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/*Escudos y promocionales*/
+.imagenes-escudos-promocionales,
+.imagenes-escudos-promocionales2 {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 32px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.imagenes-escudos-promocionales img,
+.imagenes-escudos-promocionales2 img {
+  width: 30%; /* 3 por fila si hay espacio */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto parche al pasar el cursor */
+.imagenes-escudos-promocionales img:hover,
+.imagenes-escudos-promocionales2 img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.escudos-promocionales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: var(--fuente-tamano-1);
+    font-family: var(--tipo-fuente);
+    padding-top: 50px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+
+}
